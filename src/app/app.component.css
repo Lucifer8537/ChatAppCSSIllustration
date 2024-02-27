@@ -1,0 +1,58 @@
+.container {
+  height: 100%;
+  position: relative;
+}
+.curve-background {
+  width: 500px;
+  height: 90%;
+  background: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border-radius: 0 0px 250px 250px;
+  position: absolute;
+  left: -5%;
+  z-index: -1;
+}
+.curve-down-background {
+  width: 500px;
+  height: 90%;
+  background: hsl(270, 20%, 96%);
+  border-radius: 250px 250px 0px 0px;
+  position: fixed;
+  right: -10%;
+  bottom: 0;
+  z-index: -1;
+}
+.middle-container {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+}
+.mobile-container {
+  background-color: red;
+  min-width: 220px;
+  width: 220px;
+  height: 465px;
+
+  border-radius: 30px;
+  border: 10px solid black;
+}
+.booking-container {
+  max-width: 500px;
+}
+.title {
+  color: hsl(271, 36%, 24%);
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.content {
+  line-height: 1.5em;
+  font-size: 18px;
+  color: hsl(270, 7%, 64%);
+}
