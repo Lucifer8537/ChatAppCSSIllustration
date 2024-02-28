@@ -30,8 +30,10 @@
   align-items: center;
   gap: 140px;
   position: absolute;
-  left: 25%;
-  top: 15%;
+  /* left: 25%;
+  top: 15%; */
+  left: 23%;
+  top: 21%;
 }
 .mobile-container {
   background-color: red;
@@ -41,6 +43,47 @@
 
   border-radius: 30px;
   border: 10px solid black;
+}
+.top-container {
+  position: relative;
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 10px;
+  justify-content: space-between;
+  padding: 25px 15px 10px 15px;
+  background-color: black;
+}
+.details {
+  display: flex;
+  align-items: center;
+}
+.avatar-container {
+  display: grid;
+  margin-left: 6px;
+}
+.name {
+  font-size: 11px;
+}
+.status {
+  font-size: 9px;
+}
+.avatar {
+  border: 2px solid white;
+  border-radius: 50px;
+  width: 22px;
+  margin-left: 5px;
+}
+.top {
+  width: 125px;
+  height: 16px;
+  background-color: blue;
+  margin: 0 auto;
+  border-radius: 0px 0px 30px 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .booking-container {
   max-width: 500px;
