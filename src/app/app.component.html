@@ -15,7 +15,46 @@
         </div>
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </div>
-      <div class="bottom-container"></div>
+      <div class="bottom-container">
+        <ng-container *ngFor="let c of chat">
+          <div *ngIf="c.action === 'recieved'" class="recieved-container">
+            {{ c.data }}
+          </div>
+          <div *ngIf="c.action === 'img'" class="dog-container">
+            <img
+              src="../assets/dog-image-1.jpg"
+              alt="dog-image-1"
+              class="dog"
+            />
+            <img
+              src="../assets/dog-image-2.jpg"
+              alt="dog-image-2"
+              class="dog"
+            />
+            <img
+              src="../assets/dog-image-3.jpg"
+              alt="dog-image-3"
+              class="dog"
+            />
+          </div>
+          <div
+            *ngIf="c.action === 'sent'"
+            class="sent-container"
+            [class.sent-container-2]="c.sentTwo"
+          >
+            {{ c.data }}
+          </div>
+          <div class="payement-container" *ngIf="c.action === 'cost'">
+            <div class="circle"></div>
+            <div class="data">{{ c.data }}</div>
+            <div class="cash">${{ c.cash }}</div>
+          </div>
+        </ng-container>
+        <div class="input-container">
+          <span class="placeholder">Type a message...</span>
+          <i class="btn fa-solid fa-angle-right"> </i>
+        </div>
+      </div>
     </div>
     <div class="booking-container">
       <div class="title">{{ title }}</div>
