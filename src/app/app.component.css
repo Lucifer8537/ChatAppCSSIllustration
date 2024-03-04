@@ -53,8 +53,8 @@
   border-radius: 30px 30px 8px 8px;
   background: linear-gradient(
     to right,
-    hsl(293, 100%, 63%),
-    hsl(264, 100%, 61%)
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
   );
 }
 .details {
@@ -197,4 +197,37 @@
   align-items: center;
   justify-content: center;
   display: flex;
+}
+@media (max-width: 678px) {
+  .container {
+    overflow-x: hidden;
+  }
+  .curve-background {
+    height: 520px;
+    left: -83%;
+  }
+  .curve-down-background {
+    position: absolute;
+    height: 60%;
+    right: -90%;
+  }
+  .middle-container {
+    display: grid;
+    position: static;
+    gap: 0px;
+  }
+  .mobile-container {
+    margin: 60px auto;
+  }
+  .booking-container {
+    width: 90%;
+    margin: 0 auto 60px auto;
+    text-align: center;
+  }
+  .title {
+    font-size: 240%;
+  }
+  .content {
+    font-size: 110%;
+  }
 }
